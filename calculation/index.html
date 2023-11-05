@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Party Member</h2>
+
+    <label for="playeratk">Attack</label>
+    <input type="number" name="Attack" id="playeratk" value="10">
+
+    <label for="playerdf">Defence</label>
+    <input type="number" name="Defence" id="playerdf" value=2>
+
+    <label for="playermaxhp">Max HP</label>
+    <input type="number" name="Max HP" id="playermaxhp" value="120">
+
+    <h3>FIGHT</h3>
+
+    <label for="accuracy">Frames off/accuracy (-1 for miss)</label>
+    <input type="number" name="Accuracy" id="accuracy" value=0>
+
+    <h2>Enemy</h2>
+
+    <label for="enemyatk">Attack</label>
+    <input type="number" name="Attack" id="enemyatk" value=5>
+
+    <label for="enemydf">Defence</label>
+    <input type="number" name="Defence" id="enemydf" value=0>
+
+    <label for="enemymaxhp">Max HP</label>
+    <input type="number" name="Max HP" id="enemymaxhp" value="120">
+
+    <h2>Calculation type</h2>
+
+    <h3>Damage</h3>
+
+    <input type="radio" name="type" id="fight">
+    <label for="fight">FIGHT</label>
+    
+    <input type="radio" name="type" id="bullet-hit">
+    <label for="bullet-hit">Getting hit by enemy bullet</label>
+
+    <button onclick="submit()">Calculate!</button>
+
+    <p id="answer"></p>
+
+</body>
+<script src="index.js"></script>
+</html>
